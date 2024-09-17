@@ -12,30 +12,30 @@ def simpleNetwork():
     # Cria a rede
     net = Mininet(controller=Controller)
 
-    info('*** Adding controller\n')
+    info('*** Criando Controlador \n')
     net.addController('c0')
 
-    info('*** Adding hosts\n')
+    info('*** Criando hosts\n')
     h1 = net.addHost('h1', ip='10.0.0.1/24')
     h2 = net.addHost('h2', ip='10.0.0.2/24')
 
-    info('*** Adding switch\n')
+    info('*** Criando switch\n')
     s1 = net.addSwitch('s1')
 
-    info('*** Creating links\n')
+    info('*** Criando links\n')
     net.addLink(h1, s1)
     net.addLink(h2, s1)
 
-    info('*** Starting network\n')
+    info('*** Iniciando o Laboratório\n')
     net.start()
 
-    info('*** Testing network connectivity\n')
+    info('*** Teste de conectividade\n')
     net.pingAll()
 
-    info('*** Running CLI\n')
+    info('*** Liberando CLI\n')
     CLI(net)
 
-    info('*** Stopping network\n')
+    info('*** Encerrando Laboratíroo\n')
     net.stop()
 
 if __name__ == '__main__':
