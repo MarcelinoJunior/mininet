@@ -26,7 +26,7 @@ def simpleNetwork():
     net.addLink(h1, s1)
     net.addLink(h2, s1)
 
-    info('*** Iniciando o Laboratório\n')
+    info('*** Iniciando o Laboratorio\n')
     net.start()
 
     info('*** Teste de conectividade\n')
@@ -35,7 +35,7 @@ def simpleNetwork():
     info('*** Liberando CLI\n')
     CLI(net)
 
-    info('*** Encerrando Laboratíroo\n')
+    info('*** Encerrando Laboratorio\n')
     net.stop()
 
 if __name__ == '__main__':
