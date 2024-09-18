@@ -39,5 +39,5 @@ def simpleNetwork():
     net.stop()
 
 if __name__ == '__main__':
-    setLogLevel('info')  # Defina o nível de log para 'info' para ver as mensagens de log.
+    setLogLevel('info')  # Defina o nivel de log para 'info' para ver as mensagens de log.
     simpleNetwork()
